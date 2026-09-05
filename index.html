@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - FutureMaker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Logo Header -->
+    <header>
+        <a href="index.html" class="logo-link"><img src="Assets/Logo.png" alt="FutureMaker logo" class="site-logo"></a>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="topnav" id="myTopnav">
+        <div id="myLinks">
+            <a href="quiz.html">Quiz</a>
+            <a href="careers.html">Careers</a>
+            <a href="courses.html">Courses</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <form class="nav-search" novalidate>
+                <input type="search" placeholder="Search...">
+                <button type="submit">&#x2315;</button>
+            </form>
+        </div>
+        <button class="icon" type="button" onclick="myFunction()">
+        </button>
+    </nav>
+    
+    <!-- Main content area -->
+    <main>
+        <img src="Assets/swirl.svg" alt="Decorative swirl" class="decorative-swirl"> <!-- Decorative swirl image -->
+        
+        <div class="intro-container"> <!-- Introduction Section -->
+           <p class="intro-text">WELCOME TO FUTUREMAKER!</p>
+           <p class="intro-desc">Discover the perfect path for your future with <br> our courses and career guidance!</p>
+        </div>  
+
+        <div class="parent-container"> <!-- Courses and Careers Section -->
+        <a href="courses.html">
+            <section class="courses-section">
+            <img src="Assets/school.png" alt="School icon" class="section-icon">
+            <h2>Courses</h2>
+        </section>
+        </a>
+        <a href="careers.html">
+            <section class="careers-section"> 
+            <img src="Assets/work.png" alt="briefcase icon" class="section-icon">
+            <h2>Careers</h2>
+            </section>
+        </a>
+        </div>
+    </main>
+    
+     <!-- Decorative border image -->
+    <img src="Assets/orange.svg" alt="Border" />
+
+    <!-- Quiz Section -->
+    <div class="quiz-section">
+        <h3>NEED HELP STARTING?</h3>
+        <p>Get started with our quiz to find the perfect path for you!</p>
+        <a href="quiz.html" class="start-button">BEGIN</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>Stay in contact?</p>
+            <form class="footer-form" novalidate>
+                <input type="email" name="email" id="footer-email" placeholder="your.email@example.com" required>
+                <button type="submit">Subscribe</button>
+                <div class="footer-feedback"></div>
+            </form>
+            <p>&copy; 2026 FutureMaker. All rights reserved.</p>
+        </div>
+        <div class="footer-phone" aria-label="Phone contact">
+            <img src="Assets/Phone.png" alt="Phone icon">
+            <span>01 234 567 89</span>
+        </div>
+        <div class="footer-social" aria-label="Social media links">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="Assets/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="Assets/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.tiktok.com" target="_blank">
+                <img src="Assets/tiktok.png" alt="TikTok">
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/footer.js"></script>
+    
+</body>
+</html>
+
+
+

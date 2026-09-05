@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - FutureMaker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="questionnaire.css">
+</head>
+<body>
+    <!-- Logo Header -->
+    <header>
+        <a href="index.html" class="logo-link"><img src="Assets/Logo.png" alt="FutureMaker logo" class="site-logo"></a>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="topnav" id="myTopnav">
+        <div id="myLinks">
+            <a href="quiz.html">Quiz</a>
+            <a href="careers.html">Careers</a>
+            <a href="courses.html">Courses</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <form class="nav-search" novalidate>
+                <input type="search" placeholder="Search...">
+                <button type="submit">&#x2315;</button>
+            </form>
+        </div>
+        <button class="icon" type="button" onclick="myFunction()">
+        </button>
+    </nav>
+    
+   <!-- Hero -->
+    <section class="hero">
+        <h2>Questionnaire</h2>
+        <p>Take our interest quiz to discover which career path might be right for you!</p>
+    </section>
+    <img src="Assets/swirl.svg" alt="Decorative swirl" class="decorative-swirl">
+
+    <div class="container">
+      <header class="sticky-element">
+        Go back to <a href="quiz.html">Quiz</a>
+      </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="quiz-stack">
+      <section class="card card-1"> <!-- Question 1 -->
+        <div class="card-content">
+          <span class="step">Question 1 of 4</span>
+          <h3>Q1</h3>
+          <p>You enjoy Physical Activities.</p>
+          <img src="Assets/Football.png" alt="Football icon">
+          <div class="answer-row">
+            <button type="button" class="quiz-btn">Yes</button>
+            <button type="button" class="quiz-btn">No</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="card card-2"> <!-- Question 2 -->
+        <div class="card-content">
+          <span class="step">Question 2 of 4</span>
+          <h3>Q2</h3>
+          <p>You enjoy Creative Hobbies.</p>
+          <img src="Assets/Palette.png" alt="Palette icon">
+          <div class="answer-row">
+            <button type="button" class="quiz-btn">Yes</button>
+            <button type="button" class="quiz-btn">No</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="card card-3"> <!-- Question 3 -->
+        <div class="card-content">
+          <span class="step">Question 3 of 4</span>
+          <h3>Q3</h3>
+          <p>You enjoy Communicating with Others.</p>
+          <img src="Assets/people.png" alt="People icon">
+          <div class="answer-row">
+            <button type="button" class="quiz-btn">Yes</button>
+            <button type="button" class="quiz-btn">No</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="card card-4"> <!-- Question 4 -->
+        <div class="card-content">
+          <span class="step">Question 4 of 4</span>
+          <h3>Q4</h3>
+          <p>You enjoy working in a project.</p>
+          <img src="Assets/computer.png" alt="Computer icon">
+          <div class="answer-row">
+            <button type="button" class="quiz-btn">Yes</button>
+            <button type="button" class="quiz-btn">No</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="card card-5"> <!-- Blank -->
+        <div class="card-content">
+        </div>
+      </section>
+
+    </div>
+    <button type="button" class="complete-quiz-btn">Complete Quiz</button>
+  </main>
+</div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>Stay in contact?</p>
+            <form class="footer-form" novalidate>
+                <input type="email" name="email" id="footer-email" placeholder="your.email@example.com" required>
+                <button type="submit">Subscribe</button>
+                <div class="footer-feedback"></div>
+            </form>
+            <p>&copy; 2026 FutureMaker. All rights reserved.</p>
+        </div>
+        <div class="footer-phone" aria-label="Phone contact">
+            <img src="Assets/Phone.png" alt="Phone icon">
+            <span>01 234 567 89</span>
+        </div>
+        <div class="footer-social" aria-label="Social media links">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="Assets/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="Assets/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.tiktok.com" target="_blank">
+                <img src="Assets/tiktok.png" alt="TikTok">
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/footer.js"></script>
+    
+</body>
+</html>

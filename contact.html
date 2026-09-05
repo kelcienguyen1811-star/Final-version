@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - FutureMaker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Logo Header -->
+    <header>
+        <a href="index.html" class="logo-link"><img src="Assets/Logo.png" alt="FutureMaker logo" class="site-logo"></a>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="topnav" id="myTopnav">
+        <div id="myLinks">
+            <a href="quiz.html">Quiz</a>
+            <a href="careers.html">Careers</a>
+            <a href="courses.html">Courses</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html" class="active">Contact</a>
+            <form class="nav-search" novalidate>
+                <input type="search" placeholder="Search...">
+                <button type="submit">&#x2315;</button>
+            </form>
+        </div>
+        <button class="icon" type="button" onclick="myFunction()">
+        </button>
+    </nav>
+
+   <!-- Hero -->
+    <section class="hero">
+        <h2>Contact Us</h2>
+        <p>We're here to help!</p>
+    </section>
+    
+    <!-- Decoration -->
+    <img src="Assets/swirl.svg" alt="Decorative swirl" class="decorative-swirl">
+    <img class="contact-border" src="Assets/blue.svg" alt="Border">
+
+    <!-- Contact Main Content -->
+    <main>
+        <div class="contact-container">
+            <div class="contact-row">
+                <section class="general-inquiries"> <!-- General Inquiries Section -->
+                    <h3>General Inquiries</h3>
+                    <p>If you have any questions or need assistance, please reach out to us through the following channels.</p>
+                    <p>Service hours from 9:00 AM to 5:00 PM, Monday to Friday.</p>
+                    <ul>
+                        <li><b>EMAIL</b>: info@futuremaker.com</li>
+                        <li><b>PHONE</b>: 01 234 567 89</li>
+                    </ul>
+                </section>
+                <section class="contact-team-members"> <!-- Contact Team Members Section -->
+                    <h3>Contact Our Team</h3>
+                    <p>Our team is ready to assist you with any specific questions or concerns.</p>
+                    <p>Service hours from 9:00 AM to 5:00 PM, Monday to Friday.</p>
+                    <ul>
+                        <li><b>EMAIL</b>: info@futuremaker.com</li>
+                        <li><b>PHONE</b>: 01 234 567 89</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <!-- Contact Form-->
+        <div class="container">
+            <form class="contact-form" data-feedback="Thanks! This is a demo. Your information was not saved.">
+                <label for="fname">First Name</label>
+                <input 
+                    type="text" 
+                    id="fname" 
+                    name="firstname" 
+                    placeholder="Your name.."
+                >
+                <label for="lname">Last Name</label>
+                <input 
+                    type="text" 
+                    id="lname" 
+                    name="lastname" 
+                    placeholder="Your last name.."
+                >
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="newzealand">New Zealand</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    <option value="china">China</option>
+                    <option value="germany">Germany</option>
+                    <option value="england">England</option>
+                    <option value="japan">Japan</option>
+                </select>
+                <label for="subject">Subject</label>
+                <textarea 
+                    id="subject" 
+                    name="subject" 
+                    placeholder="Write something.." 
+                    style="height:200px"
+                ></textarea>
+                <input type="submit" value="Submit">
+                <div class="footer-feedback"></div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>Stay in contact?</p>
+            <form class="footer-form" novalidate>
+                <input type="email" name="email" id="footer-email" placeholder="your.email@example.com" required>
+                <button type="submit">Subscribe</button>
+                <div class="footer-feedback"></div>
+            </form>
+            <p>&copy; 2026 FutureMaker. All rights reserved.</p>
+        </div>
+        <div class="footer-phone" aria-label="Phone contact">
+            <img src="Assets/Phone.png" alt="Phone icon">
+            <span>01 234 567 89</span>
+        </div>
+        <div class="footer-social" aria-label="Social media links">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="Assets/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="Assets/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.tiktok.com" target="_blank">
+                <img src="Assets/tiktok.png" alt="TikTok">
+            </a>
+        </div>
+    </footer>
+    <script src="js/footer.js"></script>
+
+</body>
+
+</html>

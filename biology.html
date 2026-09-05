@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - FutureMaker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="biology.css">
+</head>
+<body>
+    <!-- Logo Header -->
+    <header>
+        <a href="index.html" class="logo-link"><img src="Assets/Logo.png" alt="FutureMaker logo" class="site-logo"></a>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="topnav" id="myTopnav">
+        <div id="myLinks">
+            <a href="quiz.html">Quiz</a>
+            <a href="careers.html">Careers</a>
+            <a href="courses.html">Courses</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <form class="nav-search" novalidate>
+                <input type="search" placeholder="Search...">
+                <button type="submit">&#x2315;</button>
+            </form>
+        </div>
+        <button class="icon" type="button" onclick="myFunction()">
+        </button>
+    </nav>
+
+    <!-- Hero -->
+    <section class="subpage-hero">
+        <h2>Bachelor's degrees in <br> Human biology</h2>
+        <p>Bachelor of Science, Bachelor of Biomedical Sciences, Bachelor of Applied Science</p>
+    </section>
+    <img src="Assets/swirl.svg" alt="Decorative swirl" class="decorative-swirl">
+    
+    <!-- Sticky Element -->
+    <div class="sticky-element">
+      Go back to <a href="subpage.html">Science</a>
+    </div>
+   
+    <!-- Main Content-->
+    <main>
+        <div class="information-container">
+            <div class="information-row"> <!-- Duration, Pay, and Requirements Section -->
+              <section class="duration">
+                <p>How long it takes</p>
+                <img src="Assets/clock.png" alt="Clock icon">
+                <h3>3-4 years</h3>
+              </section>
+              <section class="pay">
+                <p>How much it pays</p>
+                <img src="Assets/money.png" alt="Money icon">
+                <h3>$50,000 - $100,000</h3>
+              </section>
+              <section class="need">
+                <p>What you need</p>
+                <img src="Assets/book.png" alt="Book icon">
+                <h3>UE Entrance or equivalent</h3>
+              </section>
+            </div>
+        </div>
+
+        <div class="decorative-border"><img src="Assets/blue.svg" alt="Decorative Border"></div>
+
+        <div class="course-information"> <!-- Course Information Section -->
+            <section class="heading">
+               <h3>What's this study about?</h3>
+               <p>Human biology is the study of the human body and its functions. It covers topics such as anatomy, physiology, genetics, and biochemistry. Students will learn about the structure and function of the human body, as well as how to diagnose and treat diseases.</p>
+           </section>
+           <div class="course-information-row">
+                <section class="study-level">
+                  <p class="title">Study Level</p>
+                    <div class="numbers">
+                            <span>1</span>
+                            <span>2</span>
+                            <span>3</span>
+                            <span>4</span>
+                            <span>5</span>
+                            <span>6</span>
+                            <span class="indicator">7 8</span>
+                            <span>9</span>
+                            <span>10</span>
+                    </div>
+                </section>
+                <section class="credits">
+                    <p class="title">Credits Requirements</p>
+                    <div class="numbers">
+                    <span class="credit-number">360</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="decorative-border"><img src="Assets/orange.svg" alt="Decorative Border"></div>
+        <div class="map"> <!-- Map Section -->
+            <section class="heading">
+                <h3>Where to study in New Zealand?</h3>
+            </section>
+            <div class ="mapcontent">
+            <section class="text">
+                <p>2 education providers offer Bachelor's degrees in Human biology</p>
+                <button>Explore available centres</button>
+            </section>
+            <section class="mapimg">
+                <img src="Assets/map.png" alt="Map of New Zealand">
+            </section>
+            <section class="universities">
+                <p>Numbers of providers in the area.</p>
+            </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>Stay in contact?</p>
+            <form class="footer-form" novalidate>
+                <input type="email" name="email" id="footer-email" placeholder="your.email@example.com" required>
+                <button type="submit">Subscribe</button>
+                <div class="footer-feedback"></div>
+            </form>
+            <p>&copy; 2026 FutureMaker. All rights reserved.</p>
+        </div>
+        <div class="footer-phone" aria-label="Phone contact">
+            <img src="Assets/Phone.png" alt="Phone icon">
+            <span>01 234 567 89</span>
+        </div>
+        <div class="footer-social" aria-label="Social media links">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="Assets/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="Assets/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.tiktok.com" target="_blank">
+                <img src="Assets/tiktok.png" alt="TikTok">
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/footer.js"></script>
+</body>
+</html>

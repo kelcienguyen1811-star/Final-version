@@ -1,0 +1,182 @@
+/* Hero Styling */
+.hero {
+  position: relative;
+  padding: 5rem;
+  border-radius: 20px;
+  text-align: center;
+  margin: 3rem;
+  background: #efe8dd;
+  color: #2c3e50;
+  z-index: 2;
+}
+
+.hero h2 {
+  font-size: clamp(1.5rem, 4vw + 1rem, 4rem);
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: clamp(0.5rem, 1vw + 0.5rem, 1.5rem);
+  margin: 0;
+}
+
+.decorative-swirl {
+  position: absolute;
+  top: 14rem;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Main Content Styling */
+.information-container {
+  display: block;
+  text-align: center;
+  margin: 0 3rem;
+  background-color: rgba(239, 232, 221, 0.5);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.quiz-introduction {
+  border-radius: 3rem;
+  background: #efe8dd;
+  color: #2c3e50;
+  display: block;
+  margin: 1rem auto;
+  text-align: center;
+  padding: 1.75rem 4rem;
+  max-width: 500px;
+}
+
+.quiz-introduction h3 {
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  margin: 0;
+}
+
+.quiz-steps {
+  display: flex;
+  justify-content: center;
+  gap: clamp(2rem, 10vw,10rem);
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+}
+
+.step-number1, .step-number2, .step-number3{
+  width: clamp(100px, 8vw, 120px);
+  height: clamp(100px, 8vw, 120px);
+  border-radius: 50%;
+  color: #efe8dd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  font-weight: 700;
+}
+
+.step-number1, .step-number3{background: #CF6339;}
+.step-number2{background: #37499B}
+
+.step-text {
+  font-size: clamp(0.9rem, 1.2vw, 1.5rem);
+  color: #2c3e50;
+  max-width: 150px;
+  line-height: 1.4;
+}
+
+.quiz-start {
+  text-align: center;
+  margin-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.start-button {
+  display: inline-block;
+  color: #efe8dd;
+  background-color: #2c3e50;
+  text-decoration: none;
+  padding: 1.2rem 3rem;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}    
+
+/* Hover Effects */
+.steps:hover, .start-button:hover{
+  transform: translateY(-4px);
+  transition: transform 0.2s ease;
+}
+.start-button:hover{
+  background-color: #3498db;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1rem;
+    margin: 1rem;
+    }
+
+  .hero h2 {
+    font-size: clamp(1.5rem, 6vw + 1rem, 3rem);
+  }
+
+  .hero p {
+    font-size: clamp(0.5rem, 2vw + 0.5rem, 1.25rem);
+  }
+
+  .information-container {
+    margin: 1.5rem 1rem;
+    padding: 0.75rem;
+  }
+
+  .quiz-introduction {
+    width: 100%;
+    margin: 0.25rem auto 1.5rem;
+    padding: 1.25rem 1rem;
+    border-radius: 1rem;
+  }
+
+  .quiz-introduction h3 {
+    font-size: 1.35rem;
+    line-height: 1.25;
+  }
+
+  .quiz-steps {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .step-number1,
+  .step-number2,
+  .step-number3 {
+    width: 100px;
+    height: 100px;
+    font-size: 1.5rem;
+  }
+
+  .step-text {
+    max-width: 20rem;
+    font-size: clamp(0.5rem, 2vw + 0.5rem, 1.25rem);
+  }
+
+  .start-button {
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+  }
+}
